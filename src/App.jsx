@@ -1,18 +1,23 @@
 import { Suspense } from 'react';
 import './App.css';
-import Phones from './comp/Phones';
+import Header from './components/Header/Header';
+import Pricing from './components/Pricing/Pricing';
+import MarksChart from './components/MarksChart';
+import axios from 'axios';
 
-async function fetchPhones(){
-  const res = await fetch('/phones.json');
-  return res.json();
-}
+// const pricingPromise = fetch('/pricing.json').then(res => res.json());
+const pricingPromise = axios.get('/pricing.json');
 
 function App() {
   return (
     <>
-      <Suspense fallback={<h3>Loading Phones...</h3>}>
-        <Phones fetchPhones={fetchPhones()} />
-      </Suspense>
+      <Header />
+      <main>
+        <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
+          <Pricing pricingPromise={pricingPromise} />
+        </Suspense>
+        {/* <MarksChart /> */}
+      </main>
     </>
   )
 }

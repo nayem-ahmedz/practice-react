@@ -1,0 +1,50 @@
+{
+  "pricing_plans": [
+    {
+      "id": "1",
+      "name": "Basic",
+      "description": "Perfect for individuals or small businesses starting out. Basic features to get you up and running quickly.",
+      "price": 50,
+      "currency": "USD",
+      "features": [
+        "Responsive Design",
+        "1 Basic Page",
+        "Basic SEO Optimization",
+        "1 Revision"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Standard",
+      "description": "Great for growing businesses. Includes everything in the Basic plan plus advanced features and more flexibility.",
+      "price": 150,
+      "currency": "USD",
+      "features": [
+        "Responsive Design",
+        "Up to 5 Pages",
+        "Advanced SEO Optimization",
+        "Social Media Integration",
+        "3 Revisions",
+        "Basic Analytics Setup"
+      ],
+      "popular": true
+    },
+    {
+      "id": "3",
+      "name": "Premium",
+      "description": "For businesses looking to scale. Get the most advanced features and priority support.",
+      "price": 300,
+      "currency": "USD",
+      "features": [
+        "Responsive Design",
+        "Unlimited Pages",
+        "Full SEO Optimization",
+        "Custom Analytics Integration",
+        "Social Media Strategy Consultation",
+        "5 Revisions",
+        "Priority Support",
+        "Ongoing Website Maintenance"
+      ]
+    }
+  ]
+}
