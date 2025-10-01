@@ -1,0 +1,25 @@
+nav{
+    text-align: right;
+}
+nav a{
+    padding: 10px; display: inline-block;
+}
+nav a:hover{
+    background-color: black; color: white;
+}
+
+.active{
+    background-color: gray;
+    color: white;
+}
+
+.user-list a{
+    margin: 15px auto;
+    display: block;
+    padding: 5px;
+    box-shadow: 0 0 5px gray;
+}
+.user-list a:hover{
+    background-color: gray;
+    color: white;
+}
